@@ -1,0 +1,8 @@
+version: 2
+updates:
+  # The base image is selected through build args, which Dependabot cannot resolve;
+  # the weekly scheduled rebuild keeps it current instead.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
