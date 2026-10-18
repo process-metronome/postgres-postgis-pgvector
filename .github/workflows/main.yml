@@ -51,7 +51,7 @@ jobs:
       # Pushed under a throwaway tag first: the public tags only move once the image has passed the smoke test.
       # Pull requests build and load the image locally instead of pushing it.
       - name: Build
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v7
         with:
           context: .
           build-args: |
